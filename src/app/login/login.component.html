@@ -1,0 +1,35 @@
+  <div class="container-fluid">
+      <div class="row login-form">
+        <div class="col-md-6">
+        <img src="https://13zmfmnuenq8wqpf1ttwov16-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/PK-Red-850x850.png" alt="PK" data-no-lazy="1">
+        <img src="https://www.logosurfer.com/wp-content/uploads/2018/03/bmw-logo_0.png"  alt="BMW Logo" />
+        </div>
+          <div class="col-md-6">
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                <div class="row">
+                    <div class="col-md-2 text-right">
+                        <label for="userName">User Name </label>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" formControlName="userName" placeholder="Username" name="userName" autofocus [ngClass]="{ 'is-invalid': submitted && f.userName.errors }">
+                        <div *ngIf="submitted && f.userName.errors" class="invalid">
+                            <div *ngIf="f.userName.errors.required">UserName is required</div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 text-right">
+                        <label for="password">Password </label>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="password" formControlName="password" placeholder="Password" [ngClass]="{ 'is-invalid': submitted && f.userName.errors }"> 
+                        <div *ngIf="submitted && f.password.errors" class="invalid">
+                            <div *ngIf="f.password.errors.required">Password is required</div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 text-right">
+                        <button (click)= "onSubmit" class="btn btn-primary" type="submit">Login</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+      </div>
+  </div>

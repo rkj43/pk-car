@@ -1,0 +1,71 @@
+.row{
+    background: url(C:\pk_car\pk-car\src\assets\wall.jpg);
+    background:cover;
+    width:1024px;
+    height:550px; 
+}
+
+.container-fluid{
+    padding:0;
+}
+.cars{
+    font-family : Sansserif,Monospace;
+    Font-Size :60px;
+    Color:#e2000a;
+    padding-left:31px;
+    padding-top:15px;   
+    height:120px;
+}
+.Inc{
+    font-family : Sansserif,Monospace;
+    Font-Size :37px;
+    Color:#e2000a;   
+    padding-left:31px; 
+    margin-top:-25px;
+}
+.randomtext{
+    font-family : Sansserif,Monospace;
+    Font-Size :14px;
+    Color:#000;
+    padding-left:31px;
+    font-weight: bold;
+}
+.p1{
+    margin:0px;
+    padding-left: 30px;
+   
+}
+
+.navbar1{
+    a{    
+    font-family : Sansserif,Monospace;
+    Font-Size :15px;
+    Color:#fff;
+    justify-content: flex-end;
+    float:right;
+    padding-left: 10px;
+    padding-top:  30px;
+    padding-right: 31px;
+    }
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 297px;
+    height: 31px;
+    margin-left: 252px;
+}
+
+button{
+    background-color: red;
+    border: 0;
+    padding: 3px 9px;
+    color: white;
+    height: 31px;
+    
+    
+}
+#search{
+    width: 256px;
+}
+
