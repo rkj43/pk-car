@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { CommonModule } from "@angular/common";
+import { Router } from'@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +9,34 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  Cars: any;
+  submitted: boolean;
 
-  constructor() { }
+  constructor(private httpService: HttpClient,private navigate: Router ) { }
+  
+  ngOnInit() {
+  
+    this.loadjsonData();
+    
+  }
 
-  ngOnInit(): void {
+  loadjsonData() {
+    this.httpService.get('./assets/carlist.json').subscribe(
+      data => {
+ 
+       this.Cars = data['cardetails'];
+  
+       },
+       (err: HttpErrorResponse) => {
+         console.log (err.message);
+         }
+       );
+  
+  }
+  onSearch()
+  {
+    this.submitted = true;
+    this.navigate.navigateByUrl('home2');
   }
 
 }

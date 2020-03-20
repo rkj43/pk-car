@@ -3,7 +3,34 @@
     background:cover;
     width:1024px;
     height:550px; 
+    margin:0 auto;
+   
+   
 }
+.input-group-text{
+    background-image: url(C:\pk_car\pk-car\src\assets\gobutton.png);
+    width: 63px;
+    
+}
+.input-group{
+    width: 234px;
+    font-family: Sansserif,Monospace;
+    Font-Size:15px;
+    Color:#80c1ce;
+ 
+}
+.col-md-12{
+
+    
+    background-image: url(C:\pk_car\pk-car\src\assets\trapezoid.png);
+    background-size: cover;
+}
+
+.col-md-6{
+    margin:0 auto;
+}
+
+
 
 .container-fluid{
     padding:0;
@@ -48,13 +75,7 @@
     padding-right: 31px;
     }
 }
-footer{
-    position: absolute;
-    bottom: 0;
-    width: 297px;
-    height: 31px;
-    margin-left: 252px;
-}
+
 
 button{
     background-color: red;
@@ -65,7 +86,65 @@ button{
     
     
 }
-#search{
+.search{
     width: 256px;
+  
 }
 
+.carstable{
+ margin-bottom: 30px;
+ 
+}
+ 
+
+table,th,td{
+ margin-left: 8px;
+ font-family: Sansserif;
+ font-weight: bold;
+}
+th{
+ height:50px;
+ font-family : Sansserif, Monospace;
+ Font-Size :20px;
+ Color:#fff;
+font-weight: bold;
+ background-color: #80c1ce;
+}
+ 
+
+td{
+ height: 36px;
+ border-bottom: 2px;
+ border-left: 0px;
+border-right: 0px;
+border-style: groove;
+ 
+}
+table{
+width: 962px;
+text-align: center;
+margin-top: 0px;
+    margin-right: 31px;
+    margin-left: 31px;
+    margin-bottom: 0px;
+}
+ 
+footer{
+font-family: Sansserif,Monospace;
+Font-Size :15px;
+Color:#fff;
+background-color:#333333;
+width:1024px;
+height: 60px;
+padding-top: 20px;
+text-align: center;
+margin: 0 auto;
+}
+
+.row1{
+    margin:0 auto;
+    width:1024px;
+    margin-top: 38px;
+    margin-bottom: 38px;
+    
+}

@@ -1,7 +1,7 @@
 
- <div class="container">
+ <div class>
         <div class="row">
-          <div class="col-md-6"> 
+          <div class="col-md-12"> 
             <div class="cars">CARS</div>
             <div class="Inc">Inc.</div>
             <div class="randomtext">
@@ -15,18 +15,51 @@
                 and price.
                 </p>
             </div>
+            <div class="input-group mb-3">
+                <select class="custom-select" id="inputGroupSelect02">
+                  <option selected>Search...</option>
+                  <option value="1">McLaren F1</option>
+                  <option value="2">Aston Martin One-77</option>
+                  <option value="3">Hennessey Venom GT</option>
+                  <option value="3">Lamborghini gallardo</option>
+                  <option value="3">Lamborghini murcielago</option>
+                  <option value="3">Audi r8</option>
+                  <option value="3">BMW i8</option>
+                  <option value="3">Ferrari 458</option>
+                  <option value="3">rolls royce phantom</option>
+                  <option value="3">Bugatti Chiron</option>
+                </select>
+                <div class="input-group-append">
+                  <label class="input-group-text" for="inputGroupSelect02"></label>
+                </div>
+              </div>
+            
         </div>
-    <div class="col-md-6">
-        <div>
-            <nav class="navbar1">
-                <a href="https://google.com">  Google </a>
-                <a href="http://localhost:4200/#/home">  Home </a>
-            </nav>
-        </div>
-        <footer>
-            <input type="text" id="search" placeholder="Search">
-            <button type="button">GO</button>
-        </footer>
-    </div>
+        
+            
+            
+       
+        
      </div>    
+     <div class="row1">
+        <div class ="carstable">
+            <table>
+              <tr>
+                <th>#</th>
+                <th>Make</th>
+                <th>Model</th>
+                
+              </tr>
+              <tr *ngFor="let car of Cars">
+              <td>{{ car.id }}</td>
+              <td>{{ car.make }}</td>
+              <td>{{ car.model }}</td>
+             
+              </tr>
+            </table>
+            </div>
+           
+     </div>
+     
 </div>
+<footer> copyright @ ( Rahul )</footer>
