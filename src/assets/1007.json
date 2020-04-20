@@ -1,0 +1,16 @@
+{
+	"cardetails": [
+		{
+	"id": 1007,
+	"model": "BMW i8",
+    "color": "Grey",
+    "topspeed": "250 km/h",
+    "price": "$2.2 million",
+	"main":"assets/cars/1007/main.jpg",
+	"image1":"assets/cars/1007/1.jpg",
+	"image2":"assets/cars/1007/2.jpg",
+	"image3":"assets/cars/1007/3.jpg",
+	"image4":"assets/cars/1007/4.jpg"
+}
+	]
+}

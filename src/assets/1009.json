@@ -1,0 +1,16 @@
+{
+	"cardetails": [
+		{
+	"id": 1009,
+	"model": "rolls royce phantom",
+    "color": "White",
+    "topspeed": "249 km/h",
+    "price": "$4.17 million",
+	"main":"assets/cars/1009/main.jpg",
+	"image1":"assets/cars/1009/1.jpg",
+	"image2":"assets/cars/1009/2.jpg",
+	"image3":"assets/cars/1009/3.jpg",
+	"image4":"assets/cars//1009/4.jpg"
+}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"cardetails": [
+		{
+	"id": 1008,
+	"model": "Ferrari 458",
+    "color": "Green",
+    "topspeed": "320 km/h",
+    "price": "$3 million",
+	"main":"assets/cars/1008/main.jpg",
+	"image1":"assets/cars/1008/1.jpg",
+	"image2":"assets/cars/1008/2.jpg",
+	"image3":"assets/cars/1008/3.jpg",
+	"image4":"assets/cars/1008/4.jpg"
+}
+	]
+}

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { CommonModule } from "@angular/common";
 import { Router } from'@angular/router';
+import { DatapassService } from '../datapass.service';
 
 @Component({
   selector: 'app-home',
@@ -11,8 +12,9 @@ import { Router } from'@angular/router';
 export class HomeComponent implements OnInit {
   Cars: any;
   submitted: boolean;
+  selectedChoice: any;
 
-  constructor(private httpService: HttpClient,private navigate: Router ) { }
+  constructor(private httpService: HttpClient,private navigate: Router,private datapassService:DatapassService ) { }
   
   ngOnInit() {
   
@@ -35,8 +37,10 @@ export class HomeComponent implements OnInit {
   }
   onSearch()
   {
-    this.submitted = true;
+ 
+      this.datapassService.setData(this.selectedChoice);
     this.navigate.navigateByUrl('home2');
   }
+ 
 
 }

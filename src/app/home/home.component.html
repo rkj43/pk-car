@@ -16,21 +16,16 @@
                 </p>
             </div>
             <div class="input-group mb-3">
-                <select class="custom-select" id="inputGroupSelect02">
-                  <option selected>Search...</option>
-                  <option value="1">McLaren F1</option>
-                  <option value="2">Aston Martin One-77</option>
-                  <option value="3">Hennessey Venom GT</option>
-                  <option value="3">Lamborghini gallardo</option>
-                  <option value="3">Lamborghini murcielago</option>
-                  <option value="3">Audi r8</option>
-                  <option value="3">BMW i8</option>
-                  <option value="3">Ferrari 458</option>
-                  <option value="3">rolls royce phantom</option>
-                  <option value="3">Bugatti Chiron</option>
+                <select [(ngModel)]="selectedChoice" id="inputGroupSelect02" class="custom-select" >
+                  <option [value]="car.id" *ngFor="let car of Cars">
+                    {{car.model}}
+                </option>
+                 
                 </select>
+
+               
                 <div class="input-group-append">
-                  <label class="input-group-text" for="inputGroupSelect02"></label>
+                  <button (click)= "onSearch()" class="input-group-text" for="inputGroupSelect02" ></button>
                 </div>
               </div>
             
@@ -63,3 +58,4 @@
      
 </div>
 <footer> copyright @ ( Rahul )</footer>
+

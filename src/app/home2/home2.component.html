@@ -10,21 +10,33 @@
             and price.Find the best resale value cars<br>
             and price.Find the best resale value cars<br>
             and price.Find the best resale value cars<br>
-            and price.Find the best resale value cars<br>
+            and price.Find the best resale value cars <br>
             and price.
+            
             </p>
+          
+        
         </div>
     </div>
 
  </div> 
-<div class="row1">
-    <div class="CarHeading">
-      
+<div class="row1" *ngFor="let car of car">
+    <div class="col-md-12"> 
+    <div class="CarHeading"> 
+        {{car.model}}
+    </div>
+    <div class="CarImage">
+        <img src={{car.main}} width="962">
+       
+    </div>
+
+    <div class="CarDetails">
+        Name        :{{car.model}}<br>
+        Color       :{{car.color}}<br>
+        Topspeed    :{{car.topspeed}}<br>
+        Price       :{{car.main}}
+
     </div>
 
 </div>
-
-
-
-
 </div>

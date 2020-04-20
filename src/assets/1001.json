@@ -1,0 +1,16 @@
+{
+	"cardetails": [
+		{
+	"id": 1001,
+	"model": "McLaren F1",
+    "color": "Black",
+    "topspeed": "372 km/h",
+    "price": "$12 million",
+	"main":"assets/cars/1001/main.jpg",
+	"image1":"assests/cars/1001/1.jpg",
+	"image2":"assests/cars/1001/2.jpg",
+	"image3":"assests/cars/1001/3.jpg",
+	"image4":"assests/cars/1001/4.jpg"
+		}
+	]
+}
