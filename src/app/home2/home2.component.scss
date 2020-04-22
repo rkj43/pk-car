@@ -53,15 +53,7 @@
 }
 
 
-button{
-    background-color: red;
-    border: 0;
-    padding: 3px 9px;
-    color: white;
-    height: 31px;
-    
-    
-}
+
 .search{
     width: 256px;
   
@@ -75,10 +67,74 @@ button{
 .CarHeading{
     font-family : Sans-serif,Monospace ;
     font-size :20px;
-    Color:#80c1ce Bold
+    Color:#80c1ce;
+    font-weight: bold;
+    text-align: center;
 }
 
 .CarImage{
     background-image: url();
     background-size: cover;
+    
 }
+
+.CarDetails{
+    font-family : Sans-serif,Monospace ;
+    font-size :14px;
+    Color:black;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.gallery{
+    text-align: center;
+    font-weight: bold;
+    background-color: yellow;
+    padding-left: 31px;
+    padding-right: 31px;
+    width: 962px;
+
+}
+
+.images{
+    margin-left: auto;
+    margin-right: auto;
+    
+    img{
+        width: 142px; 
+        height: 160px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 30px;
+    }
+    padding-bottom: 30px;
+    padding-left: 70px;
+}
+
+footer{
+    font-family: Sansserif,Monospace;
+    Font-Size :15px;
+    Color:#fff;
+    background-color:#333333;
+    width:1024px;
+    height: 60px;
+    padding-top: 20px;
+    text-align: center;
+    margin: 0 auto;
+    }
+
+    .input-group{
+        width: 234px;
+        font-family: Sansserif,Monospace;
+        Font-Size:15px;
+        Color:#80c1ce;
+     
+    }
+    .input-group-text{
+    width: 63px;
+    height: 38px;
+    
+}
+
+    

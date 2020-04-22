@@ -8,8 +8,8 @@
     "price": "$5 million",
 	"main":"assets/cars/1010/main.jpg",
 	"image1":"assets/cars/1010/1.jpg",
-	"image2":"assets/cars/cars/1010/2.jpg",
-	"image3":"assets/cars/cars/1010/3.jpg",
+	"image2":"assets/cars/1010/2.jpg",
+	"image3":"assets/cars/1010/3.jpg",
 	"image4":"assets/cars/1010/4.jpg"
 }
 	]

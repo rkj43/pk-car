@@ -12,6 +12,8 @@ export class Home2Component implements OnInit {
 choice: any;
   car: any;
   address: string;
+  Cars: any;
+  selectedChoice: any;
   constructor(
     private datapassService:DatapassService,
     private router:Router,
@@ -22,6 +24,7 @@ choice: any;
   ngOnInit(): void {
     this.choice = this.datapassService.getData();
     this.loadjsonData();
+  
   }
 
   loadjsonData() {
@@ -41,4 +44,11 @@ choice: any;
   
   }
 
+  
+
+        onSearch()
+        {
+          this.router.navigateByUrl('home');
+        }
+      
 }

@@ -1,4 +1,4 @@
-<div class>
+
     <div class="row">
       <div class="col-md-12"> 
         <div class="cars">CARS</div>
@@ -17,7 +17,14 @@
           
         
         </div>
-    </div>
+        <div>
+            
+            <button><a href="https://google.com" class="btn btn-primary">Google</a></button>
+            <button><a href="http://localhost:4200/#/home" class="btn btn-primary">Home</a></button>
+          </div>
+           
+          
+    </div> 
 
  </div> 
 <div class="row1" *ngFor="let car of car">
@@ -34,9 +41,24 @@
         Name        :{{car.model}}<br>
         Color       :{{car.color}}<br>
         Topspeed    :{{car.topspeed}}<br>
-        Price       :{{car.main}}
+        Price       :{{car.price}}
 
     </div>
 
+    <div class="gallery">
+        Gallery
+
+    </div>
+    <div class="images">
+        <img src={{car.image1}}>
+        <img src={{car.image2}}>
+        <img src={{car.image3}}>
+        <img src={{car.image4}}> 
+
+    </div>
+
+
+
 </div>
+<footer> copyright @ ( Rahul )</footer>
 </div>
